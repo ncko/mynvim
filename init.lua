@@ -5,8 +5,6 @@
 -- TODO: document requirements, add automation
 -- FIX: icons, nerd font stuff
 -- TODO: setup harpoon
--- TODO: read :h lua-guide
--- TODO: read :h lua
 -- TODO: read :h treesitter
 -- TODO: read :h nvim-treesitter
 -- TODO: setup snippets
