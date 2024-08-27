@@ -59,6 +59,7 @@ return {
       -- `:help lspconfig-all` for list of all pre-configured LSPs
       local servers = {
         pyright = {},
+        phpactor = {},
         lua_ls = {
           settings = {
             Lua = {
