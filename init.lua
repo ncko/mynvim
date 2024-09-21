@@ -38,6 +38,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup plugins
 ----------
 require('lazy').setup {
+  'nvim-lua/plenary.nvim',
   'tpope/vim-sleuth',
   require 'plugins.gitsigns',
   require 'plugins.which-key',
@@ -50,4 +51,5 @@ require('lazy').setup {
   require 'plugins.colorscheme',
   require 'plugins.todo-comments',
   require 'plugins.treesitter',
+  { 'pwntester/octo.nvim', cmd = 'Octo', opts = {} },
 }
