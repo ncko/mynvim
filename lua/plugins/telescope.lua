@@ -43,6 +43,12 @@ return {
 
       -- `:help telescope.builtin`
       local builtin = require 'telescope.builtin'
+      vim.keymap.set('n', '<leader>sbb', function()
+        builtin.find_files { cwd = vim.fn.expand '$HOME/.dotfiles/bin/.local/bin/' }
+      end, { desc = '[S]earch [B]in, [B]aby' })
+      vim.keymap.set('n', '<leader>sbc', function()
+        builtin.find_files { cwd = vim.fn.expand '$HOME/.dotfiles/crossfit/.local/bin/' }
+      end, { desc = '[S]earch [B]in [C]rossFit' })
       vim.keymap.set('n', '<leader>sc', builtin.git_bcommits, { desc = '[S]earch [C]ommits for current buffer' })
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'Find existing buffers' })
       vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
