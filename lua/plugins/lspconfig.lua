@@ -58,6 +58,8 @@ return {
       -- 	- settings (table): override default settings passed when initiating the server
       -- `:help lspconfig-all` for list of all pre-configured LSPs
       local servers = {
+        ruby_lsp = {},
+        sorbet = {},
         pyright = {},
         phpactor = {},
         lua_ls = {
